@@ -1,10 +1,12 @@
+import java.util.ArrayList;
+
 public class DataTypesVariables {
     public static void main(String[] args){
         //This is the variables
 
         //Primitive data types
         //below is the variables example:
-        int num1 = 50;
+        int num1 = 50; //This is variable assignment the num1 = 50
         int num2 = 60;
         byte num3 = 50;
         short num4 = 65;
@@ -80,6 +82,23 @@ public class DataTypesVariables {
         //int myInt3 = myInteger4;
         //System.out.println("Other way 3: " + myInt3); //this will show error because its null.
 
+        // Java local variable type
+        //string
+        String myVar = "String Example!";
+        System.out.println("String: " + myVar);
 
+        //var
+        var myVar1 = "String 2";
+        System.out.println("String 2: " + myVar1);
+
+        //additional
+        //var list = new ArrayList();
+        //System.out.println("List: " + list);
+
+        //var myNum = new Integer(123);
+        //System.out.println("String 2: " + myVar1);
+
+        //var myclassobj = new MyClass();
+        //System.out.println("String 2: " + myVar1);
     }
 }
