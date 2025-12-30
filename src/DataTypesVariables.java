@@ -50,7 +50,35 @@ public class DataTypesVariables {
         //Objective types
         System.out.println("Objective Types");
 
-        //Here is the set up
+        //Here is the set up of Object type
+        Integer newInteger;
+        newInteger = new Integer(59);
+        System.out.println("Object type Example: " + newInteger);
+
+        //Object Versions of Primitive Data Types Are Immutable
+        Integer myInteger = new Integer(45);
+        myInteger = new Integer(56);
+        System.out.println("Object version: " + myInteger);
+
+        //auto boxing
+        Integer newInteger1 = new Integer(45);
+        int myInt = newInteger1.intValue();
+        System.out.println("Auto Boxing: " + myInt);
+
+        // auto boxing other ways
+        Integer newInteger2 = new Integer(56);
+        int myInt1 = newInteger2;
+        System.out.println("Other way 1: " + myInt1);
+
+        // auto boxing other ways 2
+        int myInt2 = 75;
+        Integer newInteger3 = myInt2;
+        System.out.println("Other way 2: " + newInteger3);
+
+        // auto boxing other ways 3
+        //Integer myInteger4 = null;
+        //int myInt3 = myInteger4;
+        //System.out.println("Other way 3: " + myInt3); //this will show error because its null.
 
 
     }
