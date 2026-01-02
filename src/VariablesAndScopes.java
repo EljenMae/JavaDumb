@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.List;
+
 public class VariablesAndScopes {
 
     private Integer amount = 0; //This is for the command for the amount.
@@ -34,7 +37,14 @@ public class VariablesAndScopes {
         //This will be error since the area was inside instead of outside.
       //  int area1 = area + 2;
       //  System.out.println("Counting the area: "+ area1);
-    //}
+
+    //Loop scope
+    List<String> listOfNames = Arrays.asList("Joe", "Susan", "Patrick");
+    public void iterationOfNames(){
+       // String
+    }
+
+
 
 
 }

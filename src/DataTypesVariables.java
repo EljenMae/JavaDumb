@@ -14,6 +14,7 @@ public class DataTypesVariables {
         long numberLong = 9556655;
         float numberFloat = 56002;
         double numberDouble = 8554;
+        String listChar = "Hello World";
 
         System.out.println("Primitive data");
 
@@ -100,5 +101,8 @@ public class DataTypesVariables {
 
         //var myclassobj = new MyClass();
         //System.out.println("String 2: " + myVar1);
+
+        //Getting the string
+        System.out.println("Word String: " + listChar);
     }
 }
