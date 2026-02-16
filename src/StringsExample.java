@@ -76,13 +76,22 @@ public class StringsExample {
 
         //string loop concat
         String[] allStrings= new String[]{"Ten","Twenty", "Thirty"};
-        String result1 = "five"; //calling the null in the string
+        String result1 = null; //calling the null in the string
 
         //loop for the string
-        for (String string:allStrings){
-            result1 = result1 + allStrings;
+        for (String string : allStrings){
+            result1 = result1 + string ;  //This part here is needed to call out the string only because it was loop
            System.out.println(result1);
         }
+
+        //new method in the loop
+        String[] newString= new String[]{"Zero","Twenty-five", "Thirty-five"};
+        String result2 = null;
+
+        for (String string : newString){
+            result2 = new StringBuilder(result2).append(string).toString();
+        }
+
 
 
 
