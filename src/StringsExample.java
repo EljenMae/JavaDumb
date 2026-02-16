@@ -48,7 +48,41 @@ public class StringsExample {
                 """;
         System.out.println(newBlocks);
 
+        //Java string blocks
 
+        String block1 = """
+                This new block
+                """;
+        String block2= """
+                This 2nd block
+                """;
+        String block3= """
+                This 3rd block
+                """;
+        System.out.println(block1);
+        System.out.println(block2);
+        System.out.println(block3);
+
+        //Concat
+        //basic
+        String word1 ="hello";
+        String word2 ="world";
+
+        //System.out.println(word1 + " " + word2);
+
+        //string contcat performance
+        String word3 = new StringBuilder(word1).append(word2).toString();
+        System.out.println(word3);
+
+        //string loop concat
+        String[] allStrings= new String[]{"Ten","Twenty", "Thirty"};
+        String result1 = "five"; //calling the null in the string
+
+        //loop for the string
+        for (String string:allStrings){
+            result1 = result1 + allStrings;
+           System.out.println(result1);
+        }
 
 
 
